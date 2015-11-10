@@ -6,7 +6,6 @@
 </head>
 <body>
 <script>
-  console.log("TEST1");
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -35,6 +34,7 @@
   // code below.
   function checkLoginState() {
     FB.getLoginStatus(function(response) {
+      console.log("TEST1");
       statusChangeCallback(response);
     });
   }
